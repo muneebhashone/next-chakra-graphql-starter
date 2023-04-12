@@ -1,8 +1,8 @@
-# next-chakra-starter
+# next-chakra-graphql-starter
 
-Next-Chakra-Starter is a starter template (boilerplate) for building modern web applications with Next.js (TypeScript), Chakra UI, axios, react-query, react-icons, react-hook-form, and zustand. It provides a solid foundation for quickly prototyping and developing production-ready applications with a consistent UI design, robust state management, and efficient data fetching.
+next-chakra-graphql-starter is a starter template (boilerplate) for building modern full-stack web applications with Next.js (TypeScript), GraphQL Chakra UI, axios, react-query, react-icons, react-hook-form, and zustand. It provides a solid foundation for quickly prototyping and developing production-ready GraphQL API and applications with a consistent design, robust state management, and efficient data fetching.
 
-# Stack
+# Stack (Frontend)
 
 ✔ Next.js.
 
@@ -19,6 +19,22 @@ Next-Chakra-Starter is a starter template (boilerplate) for building modern web 
 ✔ react-query.
 
 ✔ react-icons.
+
+# Stack (Backend)
+
+✔ GraphQL with graphql-yoga and graphql-jit.
+
+✔ next-connect for REST Api route handlers.
+
+✔ Nexus (Code-first schema for GraphQL).
+
+✔ Codegen with react-query support.
+
+✔ Codegen.
+
+✔ MongoDB (mongoose).
+
+✔ jwt and argon2 for authentication.
 
 # Utils
 
@@ -38,11 +54,11 @@ Next-Chakra-Starter is a starter template (boilerplate) for building modern web 
 - convertToBase64 - for converting a file to base64.
 - reloadSession - for firing the visibilitychange event without changing the tab.
 
-next-chakra-starter is intended for developers who want to start building web applications with Next.js, Chakra UI, axios, react-icons, react-hook-form, and zustand. To use the starter template, follow these steps:
+next-chakra-graphql-starter is intended for developers who want to start building full-stack web applications with Next.js, GraphQL, Chakra UI, axios, react-icons, react-hook-form, and zustand. To use the starter template, follow these steps:
 
-1. Clone the repository: git clone https://github.com/muneebhashone/next-chakra-starter.git
+1. Clone the repository: git clone https://github.com/muneebhashone/next-chakra-graphql-starter.git
 
-2. Navigate to the project directory: cd next-chakra-starter
+2. Navigate to the project directory: cd next-chakra-graphql-starter
 
 3. Install dependencies: npm install
 
@@ -52,4 +68,4 @@ Once the development server is running, you can start modifying the index (src/p
 
 # Contributions
 
-next-chakra-starter is an open-source project that welcomes contributions from developers of all levels and backgrounds. If you find a bug, want to suggest a feature, or want to improve the documentation, please create an issue or pull request in the project's repository.
+next-chakra-graphql-starter is an open-source project that welcomes contributions from developers of all levels and backgrounds. If you find a bug, want to suggest a feature, or want to improve the documentation, please create an issue or pull request in the project's repository.
