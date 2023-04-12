@@ -1,13 +1,36 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import type { NextApiRequest, NextApiResponse } from 'next'
+import { NextApiRequest, NextApiResponse } from "next";
 
-type Data = {
-  name: string
-}
+import nc, { NextHandler } from "next-connect";
 
-export default function handler(
+function someMiddleware(
   req: NextApiRequest,
-  res: NextApiResponse<Data>
+  res: NextApiResponse,
+  next: NextHandler
 ) {
-  res.status(200).json({ name: 'John Doe' })
+  next(); // call to proceed to next in chain
 }
+
+const handler = nc<NextApiRequest, NextApiResponse>({
+  onError: (err, req, res, next) => {
+    console.error(err.stack);
+    res.status(500).end("Something broke!");
+  },
+  onNoMatch: (req, res) => {
+    res.status(404).end("Page is not found");
+  },
+})
+  .use(someMiddleware)
+  .get((req, res) => {
+    res.send("Hello world");
+  })
+  .post((req, res) => {
+    res.json({ hello: "world" });
+  })
+  .put(async (req, res) => {
+    res.end("async/await is also supported!");
+  })
+  .patch(async (req, res) => {
+    throw new Error("Throws me around! Error can be caught and handled.");
+  });
+
+export default handler;
