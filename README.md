@@ -30,8 +30,6 @@ next-chakra-graphql-starter is a starter template (boilerplate) for building mod
 
 ✔ Codegen with react-query support.
 
-✔ Codegen.
-
 ✔ MongoDB (mongoose).
 
 ✔ jwt and argon2 for authentication.
