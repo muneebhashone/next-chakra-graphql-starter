@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Next Chakra Starter Template</title>
+        <title>Next Chakra GraphQL Starter Template</title>
         <meta name="description" content="next chakra starter template" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
